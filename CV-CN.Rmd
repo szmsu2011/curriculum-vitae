@@ -1,0 +1,112 @@
+---
+name: 苏兆明
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: 统计专业 一等荣誉学士；金融、信息系统专业 学士
+position: 统计专业 一等荣誉学士；金融、信息系统专业 学士
+address: 广东 广州
+email: szmsu2011@hotmail.co.nz
+github: szmsu2011
+linkedin: szmsu2011
+headcolor: "414141"
+header-includes:
+  - \usepackage{ctex}
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# 工作经历
+
+```{r career}
+tribble(
+  ~role, ~company, ~loc, ~dates, ~details,
+  "研究助理（全职）", "奥克兰大学",
+  "新西兰奥克兰", "2022年1月 至 2022年6月",
+  list(
+    "协助统计系iNZightVIT的软件开发：参与了R包iNZightVIT/iNZightTS的开发。"
+  ),
+  "教学助理（兼职）", "奥克兰大学",
+  "新西兰奥克兰", "2020年3月 至 2020年12月",
+  "任计算机自习室助教及大三“统计编程(STATS 380)”与大三“统计建模(STATS 330)”的批卷员。",
+  "暑期研究员（奖学金）", "奥克兰大学",
+  "新西兰奥克兰", "2019年11月 至 2020年4月",
+  list(
+    "协助了iNZightVIT有关可视化多变量数据模组的软件开发。"
+  ),
+  "互联网金融部实习生",
+  "广发基金管理有限公司", "广东广州", "2018年12月",
+  "协助了数据处理与策略模拟等有关工作。"
+) %>%
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# 教育背景
+
+```{r edu}
+tribble(
+  ~degree, ~uni, ~loc, ~dates, ~details,
+  "理学一等荣誉学士：统计专业",
+  "奥克兰大学",
+  "新西兰奥克兰", "2021年3月 至 2022年2月",
+  list(
+    "获得全额奖学金（学费全免外加一年约合60000元生活费）。",
+    "主修基于R的数据可视化、频率学派推断、贝叶斯推断、多变量分析、随机过程及统计编程等课程。",
+    "毕业论文为开发基于R的仪表板App用于可视化奥克兰的空气污染数据。"
+  ),
+  "商学与文学双学士：统计、金融与信息系统专业",
+  "奥克兰大学",
+  "新西兰奥克兰", "2017年7月 - 2020年12月",
+  list(
+    "获得学术潜能励志奖学金（学费免三分之一）。",
+    "获得2019-2020暑期研究奖学金（约合3万元）。",
+    "获得优秀学者称号（含约合2500元奖金）。",
+    "统计系全系成绩排名前20。",
+    "于5门课获得学期总成绩第一名。",
+    "统计专业主修随机建模、时间序列分析、统计建模及基于R与SAS的统计编程等课程。",
+    "金融专业主修财务管理、现代投资理论及风险控制等课程。",
+    "信息系统专业主修信息安全、基于Tableau的数据可视化及基于SAP的企业资源计划系统等课程。"
+  )
+) %>%
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# 程序开发
+
+```{r dev}
+tribble(
+  ~pkg, ~when, ~role, ~details,
+  "iNZightTS", "2022", "贡献者",
+  "为奥克兰大学统计系的iNZightVIT软件项目提供可视化与建模分析时间序列的R编程包。"
+) %>%
+  brief_entries(
+    glue::glue("\\textbf{<pkg>}: <role> \\newline <details>",
+      .open = "<", .close = ">"
+    ),
+    paste0(when, "\\newline"),
+    .protect = FALSE
+  )
+```
+
+# 主要技能
+
+```{r skills}
+tribble(
+  ~desc, ~skill, ~null_1, ~null_2, ~details,
+  "统计工具", "数据分析相关", "", "",
+  "基于R或Tableau的静态或互动式数据可视化；数据整理与清理；统计建模、预测及计算机模拟。",
+  "语言", "编程", "", "",
+  "能熟练使用R；对SAS、Python及SQL有基础了解。",
+  "证书", "其他", "", "",
+  list(
+    "思科（Cisco）网络安全初等课程证书",
+    "IIBA商业分析学术证书（ACBA）"
+  )
+) %>%
+  detailed_entries(desc, null_1, skill, null_2, details)
+```

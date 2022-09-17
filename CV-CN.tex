@@ -1,0 +1,189 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{苏兆明}{}
+
+\position{统计专业 一等荣誉学士；金融、信息系统专业 学士}
+\address{广东 广州}
+
+\email{\href{mailto:szmsu2011@hotmail.co.nz}{\nolinkurl{szmsu2011@hotmail.co.nz}}}
+\github{szmsu2011}
+\linkedin{szmsu2011}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{ctex}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{ux5de5ux4f5cux7ecfux5386}{%
+\section{工作经历}\label{ux5de5ux4f5cux7ecfux5386}}
+
+\begin{cventries}
+    \cventry{研究助理（全职）}{奥克兰大学}{新西兰奥克兰}{2022年1月 至 2022年6月}{\begin{cvitems}
+\item 协助统计系iNZightVIT的软件开发：参与了R包iNZightVIT/iNZightTS的开发。
+\end{cvitems}}
+    \cventry{教学助理（兼职）}{奥克兰大学}{新西兰奥克兰}{2020年3月 至 2020年12月}{\begin{cvitems}
+\item 任计算机自习室助教及大三“统计编程(STATS 380)”与大三“统计建模(STATS 330)”的批卷员。
+\end{cvitems}}
+    \cventry{暑期研究员（奖学金）}{奥克兰大学}{新西兰奥克兰}{2019年11月 至 2020年4月}{\begin{cvitems}
+\item 协助了iNZightVIT有关可视化多变量数据模组的软件开发。
+\end{cvitems}}
+    \cventry{互联网金融部实习生}{广发基金管理有限公司}{广东广州}{2018年12月}{\begin{cvitems}
+\item 协助了数据处理与策略模拟等有关工作。
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{ux6559ux80b2ux80ccux666f}{%
+\section{教育背景}\label{ux6559ux80b2ux80ccux666f}}
+
+\begin{cventries}
+    \cventry{理学一等荣誉学士：统计专业}{奥克兰大学}{新西兰奥克兰}{2021年3月 至 2022年2月}{\begin{cvitems}
+\item 获得全额奖学金（学费全免外加一年约合60000元生活费）。
+\item 主修基于R的数据可视化、频率学派推断、贝叶斯推断、多变量分析、随机过程及统计编程等课程。
+\item 毕业论文为开发基于R的仪表板App用于可视化奥克兰的空气污染数据。
+\end{cvitems}}
+    \cventry{商学与文学双学士：统计、金融与信息系统专业}{奥克兰大学}{新西兰奥克兰}{2017年7月 - 2020年12月}{\begin{cvitems}
+\item 获得学术潜能励志奖学金（学费免三分之一）。
+\item 获得2019-2020暑期研究奖学金（约合3万元）。
+\item 获得优秀学者称号（含约合2500元奖金）。
+\item 统计系全系成绩排名前20。
+\item 于5门课获得学期总成绩第一名。
+\item 统计专业主修随机建模、时间序列分析、统计建模及基于R与SAS的统计编程等课程。
+\item 金融专业主修财务管理、现代投资理论及风险控制等课程。
+\item 信息系统专业主修信息安全、基于Tableau的数据可视化及基于SAP的企业资源计划系统等课程。
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{ux7a0bux5e8fux5f00ux53d1}{%
+\section{程序开发}\label{ux7a0bux5e8fux5f00ux53d1}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{iNZightTS}: 贡献者 \newline 为奥克兰大学统计系的iNZightVIT软件项目提供可视化与建模分析时间序列的R编程包。}{}{2022\newline}
+\end{cvhonors}
+
+\hypertarget{ux4e3bux8981ux6280ux80fd}{%
+\section{主要技能}\label{ux4e3bux8981ux6280ux80fd}}
+
+\begin{cventries}
+    \cventry{统计工具}{数据分析相关}{}{}{\begin{cvitems}
+\item 基于R或Tableau的静态或互动式数据可视化；数据整理与清理；统计建模、预测及计算机模拟。
+\end{cvitems}}
+    \cventry{语言}{编程}{}{}{\begin{cvitems}
+\item 能熟练使用R；对SAS、Python及SQL有基础了解。
+\end{cvitems}}
+    \cventry{证书}{其他}{}{}{\begin{cvitems}
+\item 思科（Cisco）网络安全初等课程证书
+\item IIBA商业分析学术证书（ACBA）
+\end{cvitems}}
+\end{cventries}
+
+
+
+\end{document}
