@@ -25,9 +25,16 @@ knitr::opts_chunk$set(echo = FALSE)
 tribble(
   ~role, ~company, ~loc, ~dates, ~details,
   "Research Assistant Staff", "The University of Auckland",
+  "Auckland, New Zealand", "Dec 2022 - Jun 2023",
+  list(
+    "Involved in developing a statistical programming package (iNZightVIT/iNZightTools) for data wrangling and manipulation",
+    "Completed the front-end and back-end implementation of functions in iNZightTS and iNZightTools on iNZight GUI",
+    "Supervisors: Prof Christopher J Wild, Dr Tom Elliott"
+  ),
+  "Research Assistant Staff", "The University of Auckland",
   "Auckland, New Zealand", "Jan 2022 - Jun 2022",
   list(
-    "Involved in developing a statistical programming package (iNZightVIT/iNZightTS) for visualising time series for the Department of Statistics.",
+    "Involved in developing a statistical programming package (iNZightVIT/iNZightTS) for visualising time series",
     "Supervisors: Prof Christopher J Wild, Dr Tom Elliott"
   ),
   "Teaching Assistant", "The University of Auckland",
@@ -42,7 +49,7 @@ tribble(
   "Index and Quantitative Investment Analyst Intern",
   "GF Fund Management Co., Ltd.", "Guangzhou, China", "Dec 2018",
   "Assisted in data analytics workflow and preparation works."
-) %>%
+) |>
   detailed_entries(role, dates, company, loc, details)
 ```
 
@@ -71,7 +78,7 @@ tribble(
     "Studied information security, data visualisation using Tableau and enterprise systems with SAP ERP, in Information Systems.",
     "Obtained first in class in 5 courses."
   )
-) %>%
+) |>
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
@@ -80,9 +87,13 @@ tribble(
 ```{r dev}
 tribble(
   ~pkg, ~when, ~role, ~details,
-  "iNZightTS", "2022", "Contributor",
-  "Provides analysis and data visualisation tools for exploring time series data used by iNZight."
-) %>%
+  "iNZightTS", "2022", "Author",
+  "Provides analysis and data visualisation tools for exploring time series data used by iNZightVIT/iNZight.",
+  "iNZightTools", "2023", "Author",
+  "Provides data wrangling and manipulation helper functions for data science practices in iNZightVIT/iNZight.",
+  "iNZight", "2023", "Contributor",
+  "Graphical user interface of the iNZight application, which provides tools for data manipulation, exploratory data analysis, multi-variable graphics, time series analysis and linear models."
+) |>
   brief_entries(
     glue::glue("\\textbf{<pkg>}: <role> \\newline <details>",
       .open = "<", .close = ">"
@@ -90,22 +101,4 @@ tribble(
     paste0(when, "\\newline"),
     .protect = FALSE
   )
-```
-
-# Relevant skills
-
-```{r skills}
-tribble(
-  ~desc, ~skill, ~null_1, ~null_2, ~details,
-  "Statistical tools", "Data analysis", "", "",
-  "Static and interactive visualisations with R and Tableau; data wrangling and cleaning; modelling, forecasting and simulation.",
-  "Languages", "Programming", "", "",
-  "Proficient in: R; basic knowledge in: SAS, Python and SQL.",
-  "Certificates", "Other skills", "", "",
-  list(
-    "Cisco Cybersecurity Essentials",
-    "IIBA Academic Certificate in Business Analysis"
-  )
-) %>%
-  detailed_entries(desc, null_1, skill, null_2, details)
 ```

@@ -87,7 +87,7 @@
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{2em}
-\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
  {% don't indent paragraphs
   \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
@@ -113,6 +113,10 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 % 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {June, 2023}
+    {苏兆明~~~·~~~Curriculum Vitae}
+  {\thepage}
 
 
 %-------------------------------------------------------------------------------
@@ -126,13 +130,17 @@
 \section{工作经历}\label{ux5de5ux4f5cux7ecfux5386}}
 
 \begin{cventries}
-    \cventry{研究助理（全职）}{奥克兰大学}{新西兰奥克兰}{2022年1月 至 2022年6月}{\begin{cvitems}
+    \cventry{研究助理（全职）}{奥克兰大学}{新西兰 奥克兰}{2022年12月 至 2023年6月}{\begin{cvitems}
+\item 协助统计系iNZightVIT的软件开发：参与了R包iNZightVIT/iNZightTools的开发。
+\item 完成了R包iNZightTS和iNZightTools在iNZight App里的GUI实现。
+\end{cvitems}}
+    \cventry{研究助理（全职）}{奥克兰大学}{新西兰 奥克兰}{2022年1月 至 2022年6月}{\begin{cvitems}
 \item 协助统计系iNZightVIT的软件开发：参与了R包iNZightVIT/iNZightTS的开发。
 \end{cvitems}}
-    \cventry{教学助理（兼职）}{奥克兰大学}{新西兰奥克兰}{2020年3月 至 2020年12月}{\begin{cvitems}
+    \cventry{教学助理（兼职）}{奥克兰大学}{新西兰 奥克兰}{2020年3月 至 2020年12月}{\begin{cvitems}
 \item 任计算机自习室助教及大三“统计编程(STATS 380)”与大三“统计建模(STATS 330)”的批卷员。
 \end{cvitems}}
-    \cventry{暑期研究员（奖学金）}{奥克兰大学}{新西兰奥克兰}{2019年11月 至 2020年4月}{\begin{cvitems}
+    \cventry{暑期研究员（奖学金）}{奥克兰大学}{新西兰 奥克兰}{2019年11月 至 2020年4月}{\begin{cvitems}
 \item 协助了iNZightVIT有关可视化多变量数据模组的软件开发。
 \end{cvitems}}
     \cventry{互联网金融部实习生}{广发基金管理有限公司}{广东广州}{2018年12月}{\begin{cvitems}
@@ -144,12 +152,12 @@
 \section{教育背景}\label{ux6559ux80b2ux80ccux666f}}
 
 \begin{cventries}
-    \cventry{理学一等荣誉学士：统计专业}{奥克兰大学}{新西兰奥克兰}{2021年3月 至 2022年2月}{\begin{cvitems}
+    \cventry{理学一等荣誉学士：统计专业}{奥克兰大学}{新西兰 奥克兰}{2021年3月 至 2022年2月}{\begin{cvitems}
 \item 获得全额奖学金（学费全免外加一年约合60000元生活费）。
 \item 主修基于R的数据可视化、频率学派推断、贝叶斯推断、多变量分析、随机过程及统计编程等课程。
 \item 毕业论文为开发基于R的仪表板App用于可视化奥克兰的空气污染数据。
 \end{cvitems}}
-    \cventry{商学与文学双学士：统计、金融与信息系统专业}{奥克兰大学}{新西兰奥克兰}{2017年7月 至 2020年12月}{\begin{cvitems}
+    \cventry{商学与文学双学士：统计、金融与信息系统专业}{奥克兰大学}{新西兰 奥克兰}{2017年7月 至 2020年12月}{\begin{cvitems}
 \item 获得学术潜能励志奖学金（学费免三分之一）。
 \item 获得2019-2020暑期研究奖学金（约合30000元）。
 \item 获得优秀学者称号（含约合2500元奖金）。
@@ -165,24 +173,10 @@
 \section{程序开发}\label{ux7a0bux5e8fux5f00ux53d1}}
 
 \begin{cvhonors}
-    \cvhonor{}{\textbf{iNZightTS}: 贡献者 \newline 为奥克兰大学统计系的iNZightVIT软件项目提供可视化与建模分析时间序列的R编程包。}{}{2022\newline}
+    \cvhonor{}{\textbf{iNZightTS}: 作者 \newline 为奥克兰大学统计系的iNZightVIT软件项目提供可视化与建模分析时间序列的R编程包。}{}{2022\newline}
+    \cvhonor{}{\textbf{iNZightTools}: 作者 \newline 为奥克兰大学统计系的iNZightVIT软件项目提供数据清洗与操作等相关工具的R编程包。}{}{2023\newline}
+    \cvhonor{}{\textbf{iNZight}: 贡献者 \newline iNZight的前端R包，实现了iNZight应用程序的图形用户界面，以提供数据处理、探索性数据分析、多变量数据可视化、时间序列分析和线性建模等功能。}{}{2023\newline}
 \end{cvhonors}
-
-\hypertarget{ux4e3bux8981ux6280ux80fd}{%
-\section{主要技能}\label{ux4e3bux8981ux6280ux80fd}}
-
-\begin{cventries}
-    \cventry{统计工具}{数据分析相关}{}{}{\begin{cvitems}
-\item 基于R或Tableau的静态或互动式数据可视化；数据整理与清理；统计建模、预测及计算机模拟。
-\end{cvitems}}
-    \cventry{语言}{编程}{}{}{\begin{cvitems}
-\item 能熟练使用R；对SAS、Python及SQL有基础了解。
-\end{cvitems}}
-    \cventry{证书}{其他}{}{}{\begin{cvitems}
-\item 思科（Cisco）网络安全初等课程证书
-\item IIBA商业分析学术证书（ACBA）
-\end{cvitems}}
-\end{cventries}
 
 
 
