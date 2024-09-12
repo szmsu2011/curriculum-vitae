@@ -58,7 +58,7 @@ tribble(
     "Recipient of the Science Graduate Scholarship.",
     "Recipient of the Melbourne Global Graduate Scholarship.",
     "Recipient of the Professor Maurice H Belz Scholarship.",
-    "Studied computational statistics, bayesian statistical learning, multivariate statistics, mathematical statistics, measure-theoretic probability theory and stochastic optimisation.",
+    "Studied computational statistics, bayesian statistical learning, multivariate statistics, mathematical statistics, measure-theoretic probability theory, stochastic optimisation and nonparametric statistical modelling.",
     "Master thesis focuses on variable selection for high-dimensional generalised linear models."
   ),
   "BSc(Hons) in Statistics with First Class Honours",
