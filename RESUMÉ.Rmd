@@ -1,0 +1,128 @@
+---
+docname: Resumé
+name: Stephen Zhaoming Su
+profilepic: "img/profile.jpeg"
+date: "`r format(Sys.time(), '%B, %Y')`"
+position: MSc Student; BA, BCom, BSc(Hons)
+address: Victoria, Australia
+email: szmsu2011@hotmail.co.nz
+github: szmsu2011
+linkedin: szmsu2011
+aboutme: |
+  \RaggedRight Top skills: R, Statistical Modelling, Feature Selection, Computational Statistics, Data Visualisation, Multivariate Analysis, Data Wrangling, Statistical Programming, Statistical Learning, Time Series, Forecasting
+headcolor: "414141"
+output: 
+  vitae::awesomecv
+---
+
+```{r setup, include = FALSE}
+library(tibble)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# About
+
+\begin{cvparagraph}
+
+I am a current Master of Science (Mathematics and Statistics) student at the University of Melbourne, with a strong foundation in statistical programming and data analysis. I am proficient in using R for developing statistical tools, and performing data wrangling, model training and visualisation tasks. I excel at combining technical knowledge and skills with teamwork to effectively solve complex real-world problems.
+
+Though I am still pursuing my degree, I have gained valuable hands-on experience through various research projects, allowing me to navigate both independent problem-solving and collaborative environments confidently. I am able to swiftly adapt to challenges and uncertainties in the workplace and have the ability to work with large, unstructured raw data, uncovering insights and mining their potential value through statistical thinking and computation tools.
+
+In the face of uncertainty in a commercial environment, I am confident that my skills and practical experience enable me to transform data into actionable insights, helping the team in making informed decisions. I look forward to taking on a challenging role where I can apply my analytical mindset, statistical programming skills, and passion for solving complex problems to contribute meaningfully to data-driven solutions.
+
+\end{cvparagraph}
+
+# Employment
+
+```{r career}
+tribble(
+  ~role, ~company, ~loc, ~dates, ~details,
+  "Research Assistant", "The University of Auckland",
+  "Auckland, New Zealand", "Dec 2022 - Jun 2023",
+  list(
+    "Involved in developing a statistical programming package (iNZightVIT/iNZightTools) for data wrangling and manipulation",
+    "Completed the front-end and back-end implementation of functions in iNZightTS and iNZightTools on iNZight GUI",
+    "Supervisors: Prof Christopher J Wild, Dr Tom Elliott"
+  ),
+  "Research Assistant", "The University of Auckland",
+  "Auckland, New Zealand", "Jan 2022 - Jun 2022",
+  list(
+    "Involved in developing a statistical programming package (iNZightVIT/iNZightTS) for visualising time series",
+    "Supervisors: Prof Christopher J Wild, Dr Tom Elliott"
+  ),
+  "Teaching Assistant", "The University of Auckland",
+  "Auckland, New Zealand", "Mar 2020 - Dec 2020",
+  "Computer room tutor and marker of Statistical Computing (STATS 380) and Statistical Modelling (STATS 330).",
+  "Index and Quantitative Investment Analyst Intern",
+  "GF Fund Management Co., Ltd.", "Guangzhou, China", "Dec 2018",
+  "Assisted in data analytics workflow and preparation works."
+) |>
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Education
+
+```{r edu}
+tribble(
+  ~degree, ~uni, ~loc, ~dates, ~details,
+  "MSc in Mathematics and Statistics",
+  "The University of Melbourne",
+  "Victoria, Australia", "Jul 2023 - current",
+  list(
+    "Recipient of the Science Graduate Scholarship.",
+    "Recipient of the Melbourne Global Graduate Scholarship.",
+    "Recipient of the Professor Maurice H Belz Scholarship.",
+    "Studied computational statistics, bayesian statistical learning, multivariate statistics, mathematical statistics, measure-theoretic probability theory, stochastic optimisation and nonparametric statistical modelling.",
+    "Master thesis focuses on variable selection for high-dimensional generalised linear models."
+  ),
+  "BSc(Hons) in Statistics with First Class Honours",
+  "The University of Auckland",
+  "Auckland, New Zealand", "Mar 2021 - Feb 2022",
+  list(
+    "Recipient of the University of Auckland Postgraduate Honours Scholarship.",
+    "Studied data visualisation, Bayesian inference, applied multivariate analysis, stochastic processes and statistical computing with R.",
+    "Honours research project was to develop a data storytelling dashboard for exploring Auckland air quality using R."
+  ),
+  "Summer Research Scholar", "The University of Auckland",
+  "Auckland, New Zealand", "Nov 2019 - Apr 2020",
+  list(
+    "Recipient of the University of Auckland Summer Research Scholarship.",
+    "Involved in a research project in developing statistical computing tools for Visualising Multivariate Data (SCI078).",
+    "Supervisor: Prof Christopher J Wild"
+  ),
+  "BA in Statistics, BCom in Finance and Information Systems",
+  "The University of Auckland",
+  "Auckland, New Zealand", "Jul 2017 - Dec 2020",
+  list(
+    "Recipient of the University of Auckland Academic Potential Scholarship.",
+    "Recipient of the Senior Scholar Award in the Faculty of Arts.",
+    "Studied stochastic modelling, time series analysis, statistical modelling and statistical computing using R and SAS, in Statistics.",
+    "Studied advanced financial management, modern investment theory and risk management, in Finance.",
+    "Studied information security, data visualisation using Tableau and enterprise systems with SAP ERP, in Information Systems.",
+    "Obtained first in class in 5 courses."
+  )
+) |>
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Software development (R packages)
+
+```{r dev}
+tribble(
+  ~pkg, ~when, ~role, ~details,
+  "\\href{https://github.com/iNZightVIT/iNZightTS}{iNZightTS}", "2022", "Author",
+  "Provides analysis and data visualisation tools for exploring time series data used by iNZightVIT/iNZight.",
+  "\\href{https://github.com/iNZightVIT/iNZightTools}{iNZightTools}", "2023", "Author",
+  "Provides data wrangling and manipulation helper functions for data science practices in iNZightVIT/iNZight.",
+  "\\href{https://github.com/iNZightVIT/iNZight}{iNZight}", "2023", "Contributor",
+  "Graphical user interface of the \\href{https://inzight.nz}{iNZight} application, which provides tools for data manipulation, exploratory data analysis, multi-variable graphics, time series analysis and linear models."
+) |>
+  brief_entries(
+    glue::glue("\\textbf{<pkg>}: <role> \\newline <details>",
+      .open = "<", .close = ">"
+    ),
+    paste0(when, "\\newline"),
+    .protect = FALSE
+  )
+```
