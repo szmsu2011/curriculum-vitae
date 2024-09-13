@@ -1,5 +1,5 @@
 ---
-docname: Resumé
+docname: Résumé
 name: Stephen Zhaoming Su
 profilepic: "img/profile.jpeg"
 date: "`r format(Sys.time(), '%B, %Y')`"
