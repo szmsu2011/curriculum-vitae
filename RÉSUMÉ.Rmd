@@ -91,7 +91,7 @@ tribble(
     "Involved in a research project in developing statistical computing tools for Visualising Multivariate Data (SCI078).",
     "Supervisor: Prof Christopher J Wild"
   ),
-  "BA in Statistics, BCom in Finance and Information Systems",
+  "BA in Statistics; BCom in Finance, Information Systems",
   "The University of Auckland",
   "Auckland, New Zealand", "Jul 2017 - Dec 2020",
   list(
@@ -111,9 +111,9 @@ tribble(
 ```{r dev}
 tribble(
   ~pkg, ~when, ~role, ~details,
-  "\\href{https://github.com/iNZightVIT/iNZightTS}{iNZightTS}", "2022", "Author",
+  "\\href{https://github.com/iNZightVIT/iNZightTS}{iNZightTS}", "2022", "Author (submitted to CRAN)",
   "Provides analysis and data visualisation tools for exploring time series data used by iNZightVIT/iNZight.",
-  "\\href{https://github.com/iNZightVIT/iNZightTools}{iNZightTools}", "2023", "Author",
+  "\\href{https://github.com/iNZightVIT/iNZightTools}{iNZightTools}", "2023", "Author (submitted to CRAN)",
   "Provides data wrangling and manipulation helper functions for data science practices in iNZightVIT/iNZight.",
   "\\href{https://github.com/iNZightVIT/iNZight}{iNZight}", "2023", "Contributor",
   "Graphical user interface of the \\href{https://inzight.nz}{iNZight} application, which provides tools for data manipulation, exploratory data analysis, multi-variable graphics, time series analysis and linear models."
